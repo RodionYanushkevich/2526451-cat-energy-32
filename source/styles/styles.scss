@@ -5,7 +5,12 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 
+
 /* BLOCKS */
+
+@import "./blocks/page.scss";
+/* хеадер */
+@import "./blocks/main-header.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/navigation-list.scss";
 @import "./blocks/hero.scss";
@@ -34,4 +39,3 @@
 /* Футер */
 @import "./blocks/page-footer.scss";
 @import "./blocks/copyright.scss";
-

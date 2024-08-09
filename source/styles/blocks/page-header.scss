@@ -1,9 +1,13 @@
-.page-header__background-wrapper {
+.page-header {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .page-header__logo-link {
+  display: flex;
+  align-items: center;
+
   text-decoration: none;
 }
 

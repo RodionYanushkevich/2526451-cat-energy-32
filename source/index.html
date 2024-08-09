@@ -15,11 +15,12 @@
 
 <body class="page__body">
   <!-- бэкграунд?.... -->
-  <header class="page-header">
-    <div class="page-header__background-wrapper">
+  <header class="main-header">
+    <!-- <div class="header__background-wrapper"> -->
+    <div class="page-header">
       <a class="page-header__logo-link" href="index.html">
         <picture>
-          <source type="image/ssvg+xml" media="(min-width:1200px)" srcset="images/desktop-logo.svg" width="70" height="59">
+          <source type="image/svg+xml" media="(min-width:1200px)" srcset="images/desktop-logo.svg" width="70" height="59">
           <source type="image/svg+xml" media="(min-width:768px)" srcset="images/tablet-logo.svg" width="60" height="50">
           <img class="page-header__logo-image logo-image" src="images/mobile-logo.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
         </picture>
@@ -38,25 +39,29 @@
 
       <button class="page-header__nav-toggle" type="button"><span class="visually-hidden">кнопка меню</span></button>
     </div>
-
     <!-- сексция хедер?.... -->
     <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
+      <h1 class="hero__title">Функциональное<br> питание для котов</h1>
       <p class="hero__description">Занялся собой? Займись котом!</p>
-      <picture>
-        <source type="image/png" media="(min-width:1200px)" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x" width="552" height="499">
-        <source type="image/jpg" media="(min-width:768px)" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x" width="709" height="609">
-        <img class="hero-iamge" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" alt="Упаковка еды для котов" width="280" height="270">
-      </picture>
+      <div class="hero__image-container">
+        <picture>
+          <source type="image/png" media="(min-width:1200px)" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x" width="552" height="499">
+          <source type="image/jpg" media="(min-width:768px)" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x" width="709" height="609">
+          <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" alt="Упаковка еды для котов" width="280" height="270">
+        </picture>
+      </div>
       <!-- button или ссылка -->
       <button class="hero__button" type="button">подобрать программу</button>
     </section>
+    <!-- </div> -->
   </header>
 
   <main class="main-page">
 
     <section class="main-goals">
+
       <h2 class="visually-hidden">Цели</h2>
+
       <div class="goals-item goals-item--sitting-cat">
         <h3 class="goals-item__title">похудение</h3>
         <p class="goals-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -76,16 +81,16 @@
       <h2 class="result__title">Как это работает</h2>
 
       <ol class="result__steps-list step-list">
-        <li class="step-list__item">Функциональное питание
+        <li class="step-list__item step-list__item--leaf">Функциональное питание
           содержит только полезные
           питательные вещества.</li>
-        <li class="step-list__item">Выпускается в виде порошка,
+        <li class="step-list__item step-list__item--jar">Выпускается в виде порошка,
           который нужно лишь залить
           кипятком и готово.</li>
-        <li class="step-list__item">Замените один-два приема
+        <li class="step-list__item step-list__item--cutlery">Замените один-два приема
           обычной еды на наше
           функциональное питание.</li>
-        <li class="step-list__item">Уже через месяц наслаждайтесь
+        <li class="step-list__item step-list__item--clock">Уже через месяц наслаждайтесь
           изменениями к лучшему
           вашего питомца!</li>
       </ol>
@@ -130,11 +135,6 @@
           Конюшенная, д. 19/8
           Санкт-Петербург</address>
       </div>
-      <picture>
-        <source type="image/png" media="(min-width:1200px)" srcset="images/maps/desktop-map@1x.png 1x, images/maps/desktop-map@2x.png 2x" width="1440" height="400">
-        <source type="image/png" media="(min-width:768px)" srcset="images/maps/tablet-map@1x.png 1x, images/maps/tablet-map@2x.png 2x" width="768" height="400">
-        <img class="location-guide__image map-image" src="images/maps/mobile-map@1x.png" srcset="images/maps/mobile-map@2x.png 2x" alt=" Карта" width="320" height="362">
-      </picture>
     </section>
   </main>
   <!-- Футер -->

@@ -24,22 +24,22 @@
   background-position: 50% 50%;
 }
 
-.step-list__item:nth-child(1)::before {
+.step-list__item--leaf::before {
   background-image: url("../../icons/leaf.svg");
   background-size: 30px 32px;
 }
 
-.step-list__item:nth-child(2)::before {
+.step-list__item--jar::before {
   background-image: url("../../icons/jar.svg");
   background-size: 29px 28.5px;
 }
 
-.step-list__item:nth-child(3)::before {
+.step-list__item--cutlery::before {
   background-image: url("../../icons/cutlery.svg");
   background-size: 25px 30px;
 }
 
-.step-list__item:nth-child(4)::before {
+.step-list__item--clock::before {
   background-image: url("../../icons/clock.svg");
   background-size: 26px 31px;
 }
