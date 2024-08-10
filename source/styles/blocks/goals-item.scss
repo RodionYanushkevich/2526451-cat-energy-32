@@ -8,11 +8,11 @@
   // flex-shrink: 0;
   background-color: #f2f2f2;
 
-  @media (min-width: 768px) {
+  @media ($viewport-tablet) {
     padding: 77px 67px 53px 52px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($viewport-desktop) {
     padding: 77px 63px 55px 52px;
   }
 }
@@ -23,12 +23,12 @@
   background-position: 20px 21px;
   background-size: 50px 53px;
 
-  @media (min-width: 768px) {
+  @media ($viewport-tablet) {
     background-position: center right 63px;
     background-size: 200px 211px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($viewport-desktop) {
     background-position: 41px 52px;
     background-size: 100px 106px;
   }
@@ -40,12 +40,12 @@
   background-position: 13px 24px;
   background-size: 67px 50px;
 
-  @media (min-width: 768px) {
+  @media ($viewport-tablet) {
     background-position: center right 29px;
     background-size: 268px 200px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($viewport-desktop) {
     background-position: 47px 33px;
     background-size: 134px 106px;
   }
@@ -64,21 +64,21 @@
 
   color: #000000;
 
-  @media (min-width: 768px) {
+  @media ($viewport-tablet) {
     margin-left: 0;
 
     font-size: 36px;
     line-height: 36px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($viewport-desktop) {
     width: auto;
     margin-left: 214px;
   }
 }
 
 .goals-item__description {
-  @media (min-width: 768px) {
+  @media ($viewport-tablet) {
     width: 340px;
 
     font-size: 16px;
@@ -87,7 +87,7 @@
     color: #000000;
   }
 
-  @media (min-width: 1200px) {
+  @media ($viewport-desktop) {
     width: auto;
   }
 }
@@ -115,14 +115,14 @@
   background-size: 24px 12px;
   background-repeat: no-repeat;
 
-  @media (min-width: 768px) {
+  @media ($viewport-tablet) {
     // padding-right: 60px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
-  @media (min-width: 1200px) {
+  @media ($viewport-desktop) {
 
     font-size: 20px;
     line-height: 30px;

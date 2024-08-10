@@ -12,11 +12,11 @@
     background-image: url("../../images/mobile-main-background@2x.png");
   }
 
-  @media (min-width: 768px) {
+  @media ($viewport-tablet) {
     background-image: none;
   }
 
-  @media (min-width: 1200px) {
+  @media ($viewport-desktop) {
     // Посмотреть. в макете кот дальше. резина
 
     height: 694px;
