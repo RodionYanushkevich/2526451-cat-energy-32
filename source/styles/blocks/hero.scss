@@ -9,10 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-
     // ?
-    padding-left: 13.19vw;
-
+    padding-left: 190px;
     // поиграть
     height: 501px;
   }
@@ -62,7 +60,7 @@
   @media ($viewport-desktop) {
     position: absolute;
     top: 0;
-    left: 38.7%;
+    left: 557px;
     bottom: 52px;
   }
 }
