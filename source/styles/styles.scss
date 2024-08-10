@@ -17,11 +17,13 @@
 /* Цели */
 @import "./blocks/main-goals.scss";
 @import "./blocks/goals-item.scss";
-@import "./blocks/result.scss";
 /* Шаги */
+@import "./blocks/result.scss";
 @import "./blocks/step-list.scss";
+/* Живой пример */
 @import "./blocks/example.scss";
 @import "./blocks/expenses.scss";
+@import "./blocks/cats-slider.scss";
 /* Как нас найти */
 @import "./blocks/location-description.scss";
 /* Каталог */
@@ -38,4 +40,5 @@
 @import "./blocks/subscribe-form.scss";
 /* Футер */
 @import "./blocks/page-footer.scss";
+@import "./blocks/social-list.scss";
 @import "./blocks/copyright.scss";

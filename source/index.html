@@ -122,8 +122,18 @@
       </div>
 
       <div class="example__cats cats-slider">
-        <img class="cats-slider_image" src="#" alt="Толстый кот." width="560" height="512">
-        <img class="cats-slider_image" src="#" alt="Худой кот." width="560" height="512">
+        <div class="cat-slider__wrapper">
+          <picture>
+            <source type="image/png" media="(min-width:768px)" srcset="images/skinny-cat@1x.png 1x, images/skinny-cat@2x.png 2x" width="560" height="512">
+            <img class="cats-slider_image" src="images/mobile-skinny-cat@1x.png" srcset="images/mobile-skinny-cat@2x.png 2x" alt="Худой кот." width="280" height="256">
+          </picture>
+        </div>
+        <div class="cat-slider__wrapper">
+          <picture>
+            <source type="image/png" media="(min-width:1200px)" srcset="images/fat-cat@1x.png 1x, images/fat-cat@2x.png 2x" width="560" height="512">
+            <img class="cats-slider_image visually-hidden" src="images/mobile-fat-cat@1x.png" srcset="images/mobile-fat-cat@2x.png 2x" alt="Толстый кот." width="280" height="256">
+          </picture>
+        </div>
       </div>
     </section>
 
@@ -140,7 +150,7 @@
   <!-- Футер -->
 
   <footer class="page-footer">
-    <img class="page-footer__logo" src="images/desktop-text-logo.svg" alt="Текстовый логотип Кэт Энерджи" width="128" height="24">
+    <img class="page-footer__logo logo" src="images/desktop-text-logo.svg" alt="Текстовый логотип Кэт Энерджи" width="128" height="24">
 
     <ul class="page-footer__social-list social-list">
       <li class="social-list__item">
@@ -168,15 +178,13 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__copyright">
-      <a class="copyright" href="#" title="Сайт HTML Academy">
-        <span class="copyright__title">HTML Academy</span>
-        <span class="visually-hidden">Логотип HTML Academy.</span>
-        <svg width="27" height="34">
-          <use class="copyright__logo" href="images/academy-logo.svg#html-logo"></use>
-        </svg>
-      </a>
-    </div>
+    <a class="page-footer__copyright copyright" href="#" title="Сайт HTML Academy">
+      <span class="copyright__title">HTML Academy</span>
+      <span class="visually-hidden">Логотип HTML Academy.</span>
+      <svg width="27" height="34">
+        <use class="copyright__logo" href="images/academy-logo.svg#html-logo"></use>
+      </svg>
+    </a>
   </footer>
 </body>
 
