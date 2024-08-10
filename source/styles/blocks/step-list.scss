@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    // justify-content: ;
     gap: 37px 19.92vw;
   }
 
@@ -25,15 +24,16 @@
   display: flex;
   gap: 20px;
   align-items: center;
+  position: relative;
 
   @media ($viewport-tablet) {
     flex-direction: column;
     align-items: start;
     width: 29.95vw;
 
-    // ?
-    min-height: 280px;
 
+    min-height: 280px;
+    gap: 31px;
     box-sizing: border-box;
     padding-bottom: 57px;
     padding-top: 40px;
@@ -80,4 +80,21 @@
 .step-list__item--clock::before {
   background-image: url("../../icons/clock.svg");
   background-size: 26px 31px;
+}
+
+.step-list__item--leaf::after {
+  content: "1";
+  position: absolute;
+  font-family: $seccond-font;
+  color: #f2f2f2;
+  display: none;
+
+  @media ($viewport-tablet) {
+    right: 0;
+    bottom: 13px;
+    display: block;
+    z-index: -1;
+    font-size: 280px;
+    line-height: 280px;
+  }
 }
