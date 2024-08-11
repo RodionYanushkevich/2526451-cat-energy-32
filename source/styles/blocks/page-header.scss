@@ -25,7 +25,9 @@
   }
 }
 
+
 .page-header_nav {
+  display: none;
   width: 100%;
   position: absolute;
   top: 65px;
@@ -35,6 +37,10 @@
     width: unset;
     position: static;
   }
+}
+
+.close-button {
+  display: flex;
 }
 
 .page-header__logo-link {
@@ -48,11 +54,6 @@
   }
 }
 
-.close-button {
-  display: none;
-}
-
-
 .page-header__nav-toggle {
   display: block;
   width: 24px;
@@ -62,9 +63,7 @@
   border: none;
 
   background-color: #ffffff;
-  background-image: url("../../icons/mobile-toggle.svg");
-  background-position: 4px 50%;
-  z-index: 2;
+  background-repeat: no-repeat;
   cursor: pointer;
 
   @media ($viewport-tablet) {
@@ -72,3 +71,11 @@
   }
 }
 
+.burger {
+  background-image: url("../../icons/mobile-toggle.svg");
+  background-position: 50% 50%;
+}
+
+.cross {
+  background-image: url("../../icons/cross.svg");
+}
