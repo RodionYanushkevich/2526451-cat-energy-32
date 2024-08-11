@@ -6,21 +6,13 @@
   padding: 0;
 
   @media ($viewport-tablet) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 37px 19.92vw;
-  }
-
-  @media ($viewport-desktop) {
-    display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
-    gap: unset;
   }
 }
 
 .step-list__item {
+  counter-increment: section;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -29,18 +21,15 @@
   @media ($viewport-tablet) {
     flex-direction: column;
     align-items: start;
-    width: 29.95vw;
-
+    // разобраться
+    min-width: 230px;
+    max-width: 249px;
 
     min-height: 280px;
     gap: 31px;
     box-sizing: border-box;
     padding-bottom: 57px;
     padding-top: 40px;
-  }
-
-  @media ($viewport-desktop) {
-    max-width: 17.36vw;
   }
 }
 
@@ -82,8 +71,8 @@
   background-size: 26px 31px;
 }
 
-.step-list__item--leaf::after {
-  content: "1";
+.step-list__item::after {
+  content: counter(section);
   position: absolute;
   font-family: $seccond-font;
   color: #f2f2f2;
