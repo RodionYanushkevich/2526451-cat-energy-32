@@ -33,6 +33,8 @@
 }
 
 @mixin basik-title() {
+  margin: 0;
+
   font-family: $seccond-font;
   font-size: 36px;
   line-height: 40px;

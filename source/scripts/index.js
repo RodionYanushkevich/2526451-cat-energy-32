@@ -1,12 +1,12 @@
-const navMobile = document.querySelector('.navigation');
+const navMobile = document.querySelector('.page-header_nav');
 const buttonToggle = document.querySelector('.page-header__nav-toggle');
 
 buttonToggle.onclick = function() {
-  navMobile.classList.toggle('close-button');
-  if (buttonToggle.classList.contains('cross')) {
-    buttonToggle.classList.remove('cross');
-    buttonToggle.classList.add('burger');
+  navMobile.classList.toggle('page-header_nav--state-open');
+  if (buttonToggle.classList.contains('page-header__nav-toggle--cross')) {
+    buttonToggle.classList.remove('page-header__nav-toggle--cross');
+    buttonToggle.classList.add('page-header__nav-toggle--burger');
   }else{
-    buttonToggle.classList.add('cross');
+    buttonToggle.classList.add('page-header__nav-toggle--cross');
   }
 };
