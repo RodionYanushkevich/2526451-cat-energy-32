@@ -24,12 +24,6 @@
   background-color: #68b738;
   color: #ffffff;
   cursor: pointer;
-
-  @media ($viewport-tablet) {
-    font-size: 20px;
-    line-height: 26px;
-    padding: 14px 0;
-  }
 }
 
 @mixin basik-title() {

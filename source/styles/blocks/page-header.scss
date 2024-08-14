@@ -1,21 +1,24 @@
 .page-header {
   display: flex;
-  width: 100%;
+  // width: 100%;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
   min-height: 65px;
   padding: 0 20px;
+  flex-wrap: wrap;
 
   @media ($viewport-tablet) {
     padding: 25px 34px 0 30px;
+    min-height: 75px;
   }
 
   @media ($viewport-desktop) {
+    min-height: 114px;
     padding: 55px 110px 0;
   }
 }
-
+// Обрати внимание
 .page-header_nav {
   display: none;
   width: 100%;

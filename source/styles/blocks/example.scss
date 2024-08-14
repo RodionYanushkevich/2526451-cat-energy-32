@@ -18,6 +18,7 @@
   }
 
   @media ($viewport-desktop) {
+    border-top: none;
     grid-template-columns: 436px 1fr;
 
     grid-template-rows: repeat(4, 1fr);
