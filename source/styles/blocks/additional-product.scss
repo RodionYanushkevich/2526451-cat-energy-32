@@ -1,19 +1,57 @@
+.additional-product-card {
+  display: flex;
+  flex-flow: column;
+  list-style: none;
+  padding: 13px 20px 19px;
+
+  border-top: 1px solid #cdcdcd;
+
+  @media ($viewport-tablet) {
+    flex-flow: row wrap;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
 .additional-product-card__title {
+  margin: 0;
   font-family: $seccond-font;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
+  text-transform: uppercase;
 }
 
 .additional-product-card__price,
 .additional-product-card__description {
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
 }
 
 
 .additional-product-card__button {
-  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
 
   @include basik-button();
+
+  @media ($viewport-tablet) {
+    flex-grow: 2;
+  }
+}
+// Кнопки переделать
+.additional-product-card__item {
+  display: flex;
+}
+
+.additional-product-card__item:not(:last-child) {
+  min-height: 29px;
+
+  @media ($viewport-tablet) {
+    flex-grow: 1;
+  }
 }

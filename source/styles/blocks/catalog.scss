@@ -6,11 +6,11 @@
 
   @media ($viewport-tablet) {
     border: none;
-    padding: 0 30px;
+    padding: 0 30px 40px;
   }
 
   @media ($viewport-desktop) {
-    padding: 0 110px;
+    padding: 0 110px 40px;
   }
 }
 
@@ -44,16 +44,18 @@
   list-style-type: none;
 
   @media ($viewport-tablet) {
-    padding: 87px 0 67px;
+    padding: 87px 0 32px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
   }
 
   @media ($viewport-desktop) {
+    padding: 87px 0 31px;
+
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto-fit, 1fr);
-    gap: 63px 80px;
+    gap: 63px 40px;
   }
 }
 
