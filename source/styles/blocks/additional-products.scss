@@ -1,4 +1,5 @@
 .additional-products {
+  position: relative;
   padding: 29px 20px 40px;
   // Хммм
   // Разобраться с паддингами от родителя...
@@ -10,10 +11,10 @@
     padding: 0 110px;
   }
 }
-// Сделать блоками
-.additional-products__title {
-  @include catalog__title;
-}
+// // Сделать блоками
+// .additional-products__title {
+//   @include catalog__title;
+// }
 
 .additional-products__wrapper {
   @media ($viewport-desktop) {

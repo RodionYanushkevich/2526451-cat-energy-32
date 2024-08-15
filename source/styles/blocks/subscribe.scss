@@ -2,17 +2,17 @@
   padding: 15px 20px 40px;
 
   @media ($viewport-tablet) {
-    padding: 0 30px;
+    padding: 80px 30px;
   }
 
   @media ($viewport-desktop) {
-    padding: 0 110px;
+    padding: 96px 110px 104px;
   }
 }
 
-.subscribe__title {
-  @include catalog__title;
-}
+// .subscribe__title {
+//   @include catalog__title;
+// }
 
 .subscribe__form {
   display: flex;
