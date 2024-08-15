@@ -2,6 +2,7 @@
   display: block;
   padding: 187px 61px 43px 58px;
   width: 100%;
+  // мин не работает
   height: 290px;
   box-sizing: border-box;
 
@@ -9,20 +10,76 @@
 
   background-image:
     url("../../icons/icon_gift.svg"),
-    url("../../images/mobile-promotion-background@2x.png");
-
+    url("../../images/mobile-promotion-background@1x.png");
   background-repeat: no-repeat;
   background-position: center 59px, 0;
   background-size:
     78px 80px,
     100%;
+
+  @media ($viewport-tablet) {
+    padding: 71px 125px 69px 0;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    background-image:
+      url("../../icons/icon_gift.svg"),
+      url("../../images/tablet-promotion-background@1x.jpg");
+    background-position: 77px 57px, 0;
+    background-size:
+      80px 82.5px,
+      100%;
+  }
+
+  @media ($viewport-desktop) {
+    padding: 0 0 43px;
+    height: 288px;
+    width: 245px;
+    // display: flex;
+    justify-content: center;
+    background-image:
+      url("../../icons/icon_gift.svg"),
+      url("../../images/desktop-promotion-background@1x.jpg");
+    background-position: center 56px, 0;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../../icons/icon_gift.svg"),
+      url("../../images/mobile-promotion-background@2x.png");
+  }
+
+  @media (min-resolution: 2dppx) and ($viewport-tablet) {
+    background-image:
+      url("../../icons/icon_gift.svg"),
+      url("../../images/tablet-promotion-background@2x.jpg");
+  }
+  // Почему ПНГ? сравнить размеры изображения
+  @media (min-resolution: 2dppx) and ($viewport-desktop) {
+    background-image:
+      url("../../icons/icon_gift.svg"),
+      url("../../images/desktop-promotion-background@2x.png");
+  }
 }
+
 
 .promotion__description {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+  margin: 0;
 
-  align-self: end;
+
+  @media ($viewport-tablet) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 161px;
+    align-self: center;
+  }
+
+  @media ($viewport-desktop) {
+    flex-direction: column;
+    align-self: flex-end;
+  }
 }
