@@ -4,6 +4,16 @@
   // Хммм
   // Разобраться с паддингами от родителя...
   @media ($viewport-tablet) {
+    padding: 0;
+  }
+
+  @media ($viewport-desktop) {
+    padding: 0;
+  }
+}
+
+.additional-products__title {
+  @media ($viewport-tablet) {
     padding: 0 30px;
   }
 
@@ -11,13 +21,15 @@
     padding: 0 110px;
   }
 }
-// // Сделать блоками
-// .additional-products__title {
-//   @include catalog__title;
-// }
+
 
 .additional-products__wrapper {
+  @media ($viewport-tablet) {
+    padding: 0 30px;
+  }
+
   @media ($viewport-desktop) {
+    padding: 0 110px;
     display: flex;
     column-gap: 80px;
   }
@@ -38,9 +50,6 @@
 
   @media ($viewport-desktop) {
     padding-bottom: 0;
-  }
-
-  @media ($viewport-desktop) {
     flex-grow: 1;
   }
 }

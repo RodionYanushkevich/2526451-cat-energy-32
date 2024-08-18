@@ -1,8 +1,4 @@
 .promotion-title {
-  position: absolute;
-  left: 0;
-  bottom: 222px;
-
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -30,9 +26,6 @@
       height: 2px;
       width: 30px;
 
-      // min-width: 100vw;
-
-
       background-color: #68b738;
       // Переиграть. попбробовать с позициями. пока оставть
     }
@@ -49,7 +42,6 @@
 
   &::after {
     content: "";
-
     display: flex;
     height: 2px;
     background-color: #68b738;
