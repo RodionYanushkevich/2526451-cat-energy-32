@@ -40,6 +40,7 @@
       <button class="page-header__nav-toggle page-header__nav-toggle--cross" type="button"><span class="visually-hidden">кнопка меню</span></button>
     </div>
     <!-- сексция хедер?.... -->
+    <!-- попоробовать маргин топ -->
     <section class="hero">
       <h1 class="hero__title">Функциональное<br> питание для котов</h1>
       <p class="hero__description">Занялся собой? Займись котом!</p>
@@ -51,11 +52,11 @@
         </picture>
       </div>
       <!-- button или ссылка -->
-      <button class="hero__button" type="button">подобрать программу</button>
+      <a class="hero__button button" href="#">подобрать программу</a>
     </section>
   </header>
 
-  <main class="main-page">
+  <main class=" main-page">
 
     <section class="goals">
       <h2 class="visually-hidden">Цели</h2>
@@ -133,15 +134,18 @@
         </div>
       </div>
     </section>
-
+    <!-- Карта -->
     <section class="location-guide">
+
       <h2 class="visually-hidden">Как нас найти.</h2>
       <div class="location-guide__container location-description">
-        <h3 class="location-description__title">приглашаем к сотрудничеству дилеров!</h3>
-        <address class="location-description__adress">ул. Большая
+        <h3 class="location-description__title">приглашаем<br> к сотрудничеству<br> дилеров!</h3>
+        <address class="location-description__adress">ул. Большая<br>
           Конюшенная, д. 19/8
-          Санкт-Петербург</address>
+          <p>Санкт-Петербург</p>
+        </address>
       </div>
+      <iframe class="location-guide__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c15b2719cf6c87a53bac78b83a6611f39cd136930090096c461a02b241e6fe5&amp;source=constructor"></iframe>
     </section>
   </main>
 

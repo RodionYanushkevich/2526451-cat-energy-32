@@ -6,6 +6,7 @@
 @import "./common/global.scss";
 /* Отдельные блоки */
 @import "./common/promotion-title.scss";
+@import "./common/button.scss";
 /* BLOCKS */
 @import "./blocks/page.scss";
 /* хеадер */
@@ -35,6 +36,8 @@
 @import "./blocks/promotion.scss";
 /* Подписаться */
 @import "./blocks/subscribe.scss";
+/* Как добраться */
+@import "./blocks/location-guide.scss";
 /* Футер */
 @import "./blocks/page-footer.scss";
 @import "./blocks/social-list.scss";

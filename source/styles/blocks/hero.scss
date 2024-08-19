@@ -11,7 +11,7 @@
   background-size: 320px 302px, 100% 100%;
   background-position: center top 0;
   background-repeat: no-repeat;
-
+  // Линеар отдельно
   @media (min-resolution: 2dppx) {
     background-image:
       url("../../images/mobile-main-background@2x.png"),
@@ -22,7 +22,6 @@
     align-items: start;
     min-height: 875px;
     padding: 65px 30px 0 130px;
-
     background-image: none;
   }
 
@@ -100,8 +99,8 @@
 }
 
 .hero__button {
-  @include basik-button ();
   width: 100%;
+  text-decoration: none;
 
   @media ($viewport-tablet) {
     font-size: 20px;

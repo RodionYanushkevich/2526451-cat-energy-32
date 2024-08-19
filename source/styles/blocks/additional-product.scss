@@ -11,7 +11,7 @@
   }
 
   @media ($viewport-desktop) {
-    padding: 17px 0;
+    padding: 16px 0 15px;
     flex-flow: row nowrap;
     column-gap: 40px;
   }
@@ -53,10 +53,7 @@
   flex-grow: 1;
   align-items: center;
   justify-content: center;
-
-  @include basik-button();
 }
-// Кнопки переделать
 
 .additional-product-card__item {
   display: flex;
@@ -99,4 +96,3 @@
     flex-grow: 1;
   }
 }
-
