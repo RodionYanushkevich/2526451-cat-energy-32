@@ -17,3 +17,19 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+@mixin events-opacity ($hov,$act) {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible,
+  &:hover {
+    opacity: $hov;
+    transition: opacity linear 50ms;
+  }
+
+  &:active {
+    opacity: $act;
+  }
+}

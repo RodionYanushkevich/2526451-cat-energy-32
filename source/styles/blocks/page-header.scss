@@ -44,6 +44,8 @@
   @media ($viewport-tablet) {
     gap: 13px;
   }
+
+  @include events-opacity (0.8, 0.6 );
 }
 
 .page-header__logo-text {
