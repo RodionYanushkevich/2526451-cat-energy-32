@@ -1,0 +1,56 @@
+.slider-toggle__button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffff;
+  border: 2px solid #666666;
+  border-radius: 50%;
+
+  color: #666666;
+  fill: currentColor;
+
+  transform: translate(-50%, -50%);
+
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    color: #68b738;
+    border: 2px solid #68b738;
+
+    & ~ span {
+      background-color: #68b738;
+    }
+  }
+
+  &:active {
+    color: rgba(94, 170, 47, 0.6);
+    border: 2px solid rgba(94, 170, 47, 0.6);
+
+    & ~ span {
+      background-color: rgba(94, 170, 47, 0.6);
+    }
+  }
+}
+
+.slider-toggle__stick {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  display: block;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border-radius: 5px;
+
+  transform: translateX(-50%);
+  z-index: 1;
+}
