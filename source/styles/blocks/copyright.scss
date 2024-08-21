@@ -34,11 +34,11 @@
   }
 
   &:focus-visible .copyright__logo {
-    color: #68b738;
+    color: $hover-event-color;
   }
 
   &:hover .copyright__logo {
-    color: #68b738;
+    color: $hover-event-color;
   }
 
   &:active {

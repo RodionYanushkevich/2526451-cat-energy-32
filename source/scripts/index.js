@@ -12,6 +12,10 @@ buttonToggle.onclick = function() {
     buttonToggle.classList.remove('page-header__nav-toggle--cross');
     buttonToggle.classList.add('page-header__nav-toggle--burger');
   }else{
+    // хмм
+    buttonToggle.classList.remove('page-header__nav-toggle--burger');
     buttonToggle.classList.add('page-header__nav-toggle--cross');
   }
 };
+
+

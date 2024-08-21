@@ -28,11 +28,11 @@
 
   &:focus-visible {
     outline: none;
-    color: #68b738;
+    color: $hover-event-color;
   }
 
   &:hover {
-    color: #68b738;
+    color: $hover-event-color;
   }
 
   &:active {
