@@ -5,7 +5,7 @@
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 /* Отдельные блоки */
-@import "./common/promotion-title.scss";
+@import "./common/stick-title.scss";
 @import "./common/button.scss";
 /* BLOCKS */
 @import "./blocks/page.scss";
@@ -41,6 +41,6 @@
 /* Как добраться */
 @import "./blocks/location-guide.scss";
 /* Футер */
-@import "./blocks/page-footer.scss";
+@import "./blocks/footer.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/copyright.scss";

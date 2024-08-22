@@ -1,6 +1,6 @@
 .additional-products {
   position: relative;
-  padding: 29px 20px 40px;
+  // padding: 29px 20px 40px;
   // Хммм
   // Разобраться с паддингами от родителя...
   @media ($viewport-tablet) {
@@ -9,16 +9,9 @@
 
   @media ($viewport-desktop) {
     padding: 0;
-  }
-}
-
-.additional-products__title {
-  @media ($viewport-tablet) {
-    padding: 0 30px;
-  }
-
-  @media ($viewport-desktop) {
-    padding: 0 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
   }
 }
 
@@ -29,6 +22,10 @@
   }
 
   @media ($viewport-desktop) {
+    align-self: center;
+    width: clamp(1220px, 100vw, $max-viewport-width);
+    box-sizing: border-box;
+
     padding: 0 110px;
     display: flex;
     column-gap: 80px;

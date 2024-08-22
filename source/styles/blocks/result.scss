@@ -6,6 +6,10 @@
   }
 
   @media ($viewport-desktop) {
+    box-sizing: border-box;
+    align-self: center;
+    width: clamp(1220px, 100vw, $max-viewport-width);
+
     padding: 71px 110px 69px 106px;
   }
 }

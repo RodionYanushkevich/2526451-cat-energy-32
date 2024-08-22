@@ -1,6 +1,5 @@
 .page-header {
   display: flex;
-  // width: 100%;
   justify-content: space-between;
   box-sizing: border-box;
   align-items: center;
@@ -14,8 +13,11 @@
   }
 
   @media ($viewport-desktop) {
+    width: clamp(1220px, 100vw, $max-viewport-width);
     min-height: 114px;
     padding: 55px 110px 0;
+    align-self: center;
+    // width: minmax(1220px, 1440px);
   }
 }
 // Обрати внимание
