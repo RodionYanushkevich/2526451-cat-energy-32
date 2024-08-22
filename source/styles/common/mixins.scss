@@ -48,6 +48,7 @@
   }
 
   &:active {
+    cursor: grabbing;
     opacity: $active-opacity;
 
     & ~ span {
