@@ -1,5 +1,5 @@
 .product-card {
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
   margin: 0;
   list-style: none;
   // Переписать на флексы
@@ -30,7 +30,7 @@
 
 .product-card__title {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .product-card__title-link {
@@ -42,7 +42,9 @@
   line-height: 20px;
 
   text-decoration: none;
+  text-transform: uppercase;
   color: #222222;
+
 
   @media ($viewport-tablet) {
     font-size: 20px;
