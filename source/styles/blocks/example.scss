@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
 
-
   @media ($viewport-tablet) {
     background-color: transparent;
     background-image: linear-gradient(to bottom, transparent 57.26%, #eaeaea 57.26% 100%);
@@ -13,15 +12,17 @@
     background-image: linear-gradient(to bottom, transparent 22.74%, #f2f2f2 22.74% 100%);
   }
 }
-
+// зачем враппер?
+// после перфекта исправить все это
 .example__wrapper {
   box-sizing: border-box;
 
-  padding: 25px 20px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 20px;
   min-height: 659px;
+  padding: 25px 20px 40px;
 
   @media ($viewport-tablet) {
     padding: 45px 30px 101px;
@@ -29,6 +30,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto-fill);
     border-top: 1px solid #e6e6e6;
+    // проба
+    row-gap: 37px;
   }
 
   @media ($viewport-desktop) {
@@ -44,15 +47,19 @@
 }
 
 .example__title {
+  // миксин...
   @include basik-title();
   margin: 0;
-  min-height: 80px;
+  padding-bottom: 20px;
+  // min-height: 80px;
   align-self: flex-start;
 
   @media ($viewport-tablet) {
     grid-column: 1/-1;
+    padding-bottom: 20px;
+
     // Переменная титл разобраться
-    min-height: 120px;
+    // min-height: 120px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -66,14 +73,15 @@
 
 .example__description {
   margin: 0;
-  min-height: 128px;
+  // min-height: 128px;
   align-self: flex-start;
 
   @media ($viewport-tablet) {
     font-size: 16px;
     line-height: 24px;
 
-    min-height: 127px;
+    // min-height: 127px;
+    min-height: 93px;
     grid-column: 1/-1;
   }
 
@@ -103,14 +111,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  margin: 0;
 
   color: #000000;
 
   & dt {
 
     font-family: $seccond-font;
-    padding: 14px 0 18px;
+    padding: 14px 0 17px;
     box-sizing: border-box;
     min-width: 124px;
 
@@ -123,7 +131,7 @@
 
 
     @media ($viewport-tablet) {
-
+      padding: 14px 0 20px;
       font-size: 30px;
       line-height: 37px;
 
@@ -176,6 +184,9 @@
     line-height: 20px;
     text-align: right;
     grid-column: 2/3;
+    padding-top: 11px;
+    padding-bottom: 17px;
+    row-gap: 9px;
   }
 
   @media ($viewport-desktop) {
