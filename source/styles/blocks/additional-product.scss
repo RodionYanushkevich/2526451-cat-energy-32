@@ -1,12 +1,12 @@
 .additional-product-card {
+  box-sizing: border-box;
   display: flex;
   flex-flow: column;
   list-style: none;
-  padding: 13px 0 19px;
-  box-sizing: border-box;
+  padding: 13px 0 18px;
 
   @media ($viewport-tablet) {
-    padding: 25px 38px 29px;
+    padding: 25px 38px 28px;
     flex-flow: row wrap;
   }
 
@@ -37,6 +37,7 @@
   line-height: 14px;
 
   @media ($viewport-tablet) {
+    padding-top: 3px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -69,7 +70,7 @@
 
   @media ($viewport-tablet) {
     justify-content: flex-end;
-    column-gap: 49px;
+    column-gap: 52px;
   }
 }
 

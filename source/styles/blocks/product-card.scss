@@ -31,6 +31,16 @@
 .product-card__title {
   margin: 0;
   text-align: left;
+
+  @media ($viewport-tablet) {
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  @media ($viewport-desktop) {
+    text-align: center;
+    padding: 0;
+  }
 }
 
 .product-card__title-link {
@@ -86,8 +96,7 @@
 
   @media ($viewport-tablet) {
     align-items: flex-start;
-    min-height: 242px;
-    // padding: 10px 0 22px;
+    min-height: 232px;
   }
 
   @media ($viewport-desktop) {

@@ -1,8 +1,6 @@
 .additional-products {
   position: relative;
-  // padding: 29px 20px 40px;
-  // Хммм
-  // Разобраться с паддингами от родителя...
+
   @media ($viewport-tablet) {
     padding: 0;
     display: flex;
@@ -18,16 +16,14 @@
   // }
 }
 
-// .additional-products__title {
-//   @media ($viewport-tablet) {
-//     margin-bottom: 80px;
-//   }
 
-//   @media ($viewport-desktop) {
+.additional-products__title {
+  padding: 25px 0 34px;
 
-
-//   }
-// }
+  @media ($viewport-tablet) {
+    padding: 0;
+  }
+}
 
 .additional-products__wrapper {
   padding: 0 20px;
@@ -56,8 +52,8 @@
 
   list-style-type: none;
 
-  @media ($viewport-desktop) {
-    padding-bottom: 70px;
+  @media ($viewport-tablet) {
+    padding: 0 0 69px;
   }
 
   @media ($viewport-desktop) {
@@ -67,9 +63,16 @@
 }
 
 .additional-products__cards-item {
+  box-sizing: border-box;
   border-top: 1px solid #cdcdcd;
+  min-height: 129px;
+
+  @media ($viewport-tablet) {
+    // min-height: 139px;
+  }
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
 }
+
