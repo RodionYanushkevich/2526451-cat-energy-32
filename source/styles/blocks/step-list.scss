@@ -11,6 +11,13 @@
     flex-flow: row wrap;
     justify-content: space-between;
   }
+
+  @media ($viewport-desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 83px;
+    align-items: center;
+  }
 }
 
 .step-list__item {
@@ -90,7 +97,7 @@
 
 .step-list__item--jar {
   @media ($viewport-tablet) {
-    width: 249px;
+    width: 246px;
   }
 
   &::before {
@@ -101,7 +108,7 @@
 
 .step-list__item--cutlery {
   @media ($viewport-tablet) {
-    width: 246px;
+    width: 249px;
   }
 
   &::before {

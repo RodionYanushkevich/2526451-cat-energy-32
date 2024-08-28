@@ -12,9 +12,9 @@
 
   @media ($viewport-desktop) {
     align-self: center;
-    width: clamp(1220px, 100vw, $max-viewport-width);
+    width: clamp(768px, 100vw, $max-viewport-width);
     flex-direction: row;
     gap: 80px;
-    padding: 82px 110px 71px;
+    padding: 82px 0 72px;
   }
 }
