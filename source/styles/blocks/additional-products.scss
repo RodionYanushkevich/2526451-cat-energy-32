@@ -37,7 +37,7 @@
     width: clamp(1220px, 100vw, $max-viewport-width);
     box-sizing: border-box;
 
-    padding: 0 110px;
+    padding: 0;
     display: flex;
     column-gap: 80px;
   }
@@ -69,6 +69,10 @@
 
   @media ($viewport-tablet) {
     // min-height: 139px;
+  }
+
+  @media ($viewport-desktop) {
+    min-height: unset;
   }
 
   &:last-child {

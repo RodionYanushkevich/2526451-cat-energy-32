@@ -31,10 +31,10 @@
 
   @media ($viewport-desktop) {
     // min-height: 40px;
-    width: clamp(768px, 100vw, $max-viewport-width);
+    width: clamp(768px, 100vw, calc($max-viewport-width + 80px));
     box-sizing: border-box;
     place-self: center center;
-    padding: 0 110px;
+    padding: 0;
   }
 }
 
@@ -57,14 +57,18 @@
 
   @media ($viewport-tablet) {
     padding: 0 40px;
+    min-height: 32px;
+
     font-size: 32px;
     line-height: 32px;
-    min-height: 32px;
   }
 
   @media ($viewport-desktop) {
     min-height: 32px;
     padding: 0 40px;
+
+    line-height: 40px;
+    font-size: 40px;
   }
 }
 
