@@ -3,10 +3,8 @@
 
   display: flex;
   flex-direction: column;
-  // width: 100%;
-  padding: 30px 33px 18px 20px;
-
   row-gap: 15px;
+  padding: 30px 33px 18px 20px;
 
   background-color: #f2f2f2;
 
@@ -16,8 +14,8 @@
   }
 
   @media ($viewport-desktop) {
-    padding: 77px 63px 55px 52px;
     width: 50%;
+    padding: 77px 63px 55px 52px;
   }
 }
 
@@ -63,6 +61,7 @@
   min-height: 51px;
 
   font-family: $seccond-font;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -85,10 +84,10 @@
 
 .goals-item__description {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   min-height: clamp(113px, 28.12vw, 372px);
   width: clamp(227px, 70.94vw, 340px);
+  margin: 0;
+  padding: 0;
 
   font-size: clamp(14px, 4.38vw, 16px);
   line-height: clamp(18px, 5.6vw, 24px);
@@ -96,7 +95,6 @@
   border-bottom: 1px solid#D9D9D9;
 
   @media ($viewport-tablet) {
-    // width: 54.23%;
     min-height: 144px;
 
     font-size: 16px;
@@ -132,10 +130,24 @@
   background-size: 24px 12px;
   background-repeat: no-repeat;
 
+
   @media ($viewport-tablet) {
     padding-right: 60px;
     height: 38px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:focus-visible {
+    outline: none;
+    color: $hover-event-color;
+  }
+
+  &:hover {
+    color: $hover-event-color;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

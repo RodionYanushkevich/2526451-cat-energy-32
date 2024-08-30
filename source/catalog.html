@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Навание проекта</title>
+  <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -15,7 +15,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header" data-test="catalog">
     <a class="page-header__logo-link" href="index.html">
 
       <picture>
@@ -29,7 +29,7 @@
       </picture>
     </a>
 
-    <nav class="page-header_nav  page-header_nav--state-open navigation">
+    <nav class="page-header_nav  page-header_nav--state-open navigation" data-test="navigation">
       <ul class="navigation_list navigation_list--catalog-font-color">
         <li class="navigation__item"><a href="index.html">главная</a></li>
         <li class="navigation__item navigation__item--current"><a href="catalog.html" tabindex="-1">каталог продукции</a></li>
@@ -41,7 +41,7 @@
   </header>
   <main class="page__main">
 
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <h1 class="catalog__title">Каталог продукции</h1>
       <!-- Карточки товаров -->
       <ul class="catalog__product-cards-list">
@@ -374,7 +374,7 @@
     </section>
 
     <!-- Подписаться -->
-    <section class="subscribe">
+    <section class="subscribe" data-test="subscribe">
 
       <div class="stick-title">
         <div class="stick-title__container">
@@ -405,7 +405,7 @@
   </main>
 
   <!-- Футер -->
-  <footer class="page__footer footer">
+  <footer class="page__footer footer" data-test="footer">
     <div class="footer__wrapper">
       <a class="footer__logo-link" tabindex="-1" href="index.html">
         <svg class="footer__logo" width="128" height="24">

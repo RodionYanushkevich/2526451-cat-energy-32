@@ -26,15 +26,14 @@
   @media ($viewport-tablet) {
     flex-flow: row wrap;
     row-gap: 24px;
-    // padding: 0 38px;
     padding: 0 68px;
   }
 
   @media ($viewport-desktop) {
-    padding: 0 335px;
+    align-self: center;
     row-gap: 0;
     max-width: 752px;
-    align-self: center;
+    padding: 0 335px;
   }
 }
 
@@ -88,6 +87,7 @@
 .subscribe__input::placeholder {
   font-family: $seccond-font;
   text-transform: uppercase;
+
   color: #444444;
 }
 

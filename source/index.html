@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Навание проекта</title>
+  <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -13,12 +13,12 @@
   <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
-  <script src="scripts/image-slider.js" defer></script>
 </head>
 
 <body class="page__body">
   <!-- бэкграунд?.... -->
-  <header class="main-header">
+  <!-- все подписи свг и т.д проставить -->
+  <header class="main-header" data-test="header">
     <div class="page-header">
       <a class="page-header__logo-link" href="index.html">
         <picture>
@@ -32,7 +32,7 @@
         </picture>
       </a>
 
-      <nav class="page-header_nav page-header_nav--state-open navigation">
+      <nav class="page-header_nav page-header_nav--state-open navigation" data-test="navigation">
         <ul class="navigation_list">
           <li class="navigation__item navigation__item--current"><a href="index.html" tabindex="-1">главная</a></li>
           <li class="navigation__item"><a href="catalog.html">каталог продукции</a></li>
@@ -44,7 +44,7 @@
     </div>
     <!-- сексция хедер?.... -->
     <!-- попоробовать маргин топ -->
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <h1 class="hero__title">Функциональное<br> питание для котов</h1>
       <p class="hero__description">Занялся собой? Займись котом!</p>
       <div class="hero__image-container">
@@ -58,9 +58,9 @@
     </section>
   </header>
 
-  <main class="page__main">
+  <main class="page__main" data-test="main">
 
-    <section class="goals">
+    <section class="goals" data-test="goals">
       <h2 class="visually-hidden">Цели</h2>
       <!-- перебрать по БЭМ -->
       <article class="goals-item goals-item--sitting-cat">
@@ -78,7 +78,7 @@
       </article>
     </section>
 
-    <section class="result">
+    <section class="result" data-test="result">
       <h2 class="result__title">Как это работает</h2>
 
       <ol class="result__steps-list step-list">
@@ -99,7 +99,7 @@
       </ol>
     </section>
 
-    <section class="example">
+    <section class="example" data-test="example">
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой
@@ -167,7 +167,7 @@
   </main>
 
   <!-- Футер -->
-  <footer class="page__footer footer">
+  <footer class="page__footer footer" data-test="footer">
     <div class="footer__wrapper">
       <a class="footer__logo-link" tabindex="-1" href="index.html">
         <svg class="footer__logo" width="128" height="24">
@@ -180,7 +180,7 @@
         <li class="social-list__item">
           <a class="social-list__link vkontakte" href="#" title="наша страница ВКонтекте">
             <span class="visually-hidden">Вконтакте.</span>
-            <svg width="27" height="17">
+            <svg width="27" height="18">
               <use href="images/social-icons/vk.svg#vk"></use>
             </svg>
           </a>
@@ -214,6 +214,7 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/image-slider.js" defer></script>
 </body>
 
 </html>

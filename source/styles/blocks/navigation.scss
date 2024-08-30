@@ -63,6 +63,7 @@
 .navigation_list--catalog-font-color {
   @media ($viewport-tablet) {
     color: #000000;
+    // эммм цветв
   }
 }
 
@@ -74,33 +75,32 @@
 
 
 .navigation__item a {
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 100%;
 
-  text-decoration: none;
   font-family: $seccond-font;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: inherit;
+  text-decoration: none;
+
+  color: #000000;
 
 
   @media ($viewport-tablet) {
     @include events-opacity(0.6,0.3);
-
 
     font-size: 18px;
     line-height: 24px;
   }
 
   @media ($viewport-desktop) {
-    // color: #ffffff;
-    color: inherit;
-
     font-size: 20px;
     line-height: 30px;
+
+    color: inherit;
   }
 }
