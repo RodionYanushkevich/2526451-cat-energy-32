@@ -9,6 +9,8 @@
 }
 
 @mixin events-opacity ($hov,$act) {
+  transition: opacity linear 50ms;
+
   &:focus-visible {
     outline: none;
   }
@@ -16,7 +18,6 @@
   &:focus-visible,
   &:hover {
     opacity: $hov;
-    transition: opacity linear 50ms;
   }
 
   &:active {
