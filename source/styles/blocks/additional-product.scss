@@ -54,10 +54,8 @@
 
     text-align: right;
   }
-  // ?
-  @media ($viewport-desktop) {
-    min-width: 42px;
 
+  @media ($viewport-desktop) {
     text-align: left;
   }
 }
@@ -84,10 +82,9 @@
     justify-content: flex-end;
     column-gap: 52px;
   }
-  // ?
+
   @media ($viewport-desktop) {
     justify-content: space-between;
-    column-gap: 52px;
   }
 }
 

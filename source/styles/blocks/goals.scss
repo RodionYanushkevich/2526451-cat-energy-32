@@ -106,8 +106,8 @@
 
 .goals__card-description {
   box-sizing: border-box;
-  min-height: clamp(113px, 28.12vw, 372px);
-  width: clamp(227px, 70.94vw, 340px);
+  min-height: 113px;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -118,6 +118,7 @@
 
   @media ($viewport-tablet) {
     min-height: 144px;
+    width: 340px;
 
     font-size: 16px;
     line-height: 24px;
@@ -160,16 +161,5 @@
     line-height: 30px;
   }
 
-  &:focus-visible {
-    outline: none;
-    color: $hover-event-color;
-  }
-
-  &:hover {
-    color: $hover-event-color;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  @include events-opacity (0.6,0.3);
 }

@@ -4,17 +4,21 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  align-self: center;
+
+  width: 280px;
   height: 290px;
   padding: 59px 61px 43px 58px;
 
   background-color: #68b738;
   background-image: url("../../images/mobile-promotion-background@1x.webp");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto 100%;
+  background-position: center;
 
   @media ($viewport-tablet) {
     flex-direction: row;
+    width: 707px;
     height: 200px;
     padding: 71px 125px 69px 77px;
 
@@ -29,7 +33,6 @@
 
     background-image: url("../../images/desktop-promotion-background@1x.webp");
   }
-
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../images/mobile-promotion-background@2x.webp");

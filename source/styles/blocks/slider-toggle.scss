@@ -54,14 +54,13 @@
 
 .on-touch {
   color: $hover-event-color;
-  border: 2px solid $hover-event-color;
+  border-color: $hover-event-color;
   opacity: 0.6;
 
   & ~ .slider-toggle__stick {
     &::before,
     &::after {
       background-color: $hover-event-color;
-
       opacity: 0.6;
     }
   }

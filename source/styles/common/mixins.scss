@@ -7,17 +7,6 @@
     font-display: swap;
   }
 }
-// тоже разобраться
-@mixin basik-title() {
-  margin: 0;
-
-  font-family: $seccond-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
-  // text-transform: uppercase;
-  color: #000000;
-}
 
 @mixin events-opacity ($hov,$act) {
   &:focus-visible {
@@ -54,7 +43,7 @@
     cursor: grabbing;
     opacity: $active-opacity;
 
-    & ~ span {
+    & ~ .slider-toggle__stick {
       opacity: $active-opacity;
     }
   }
