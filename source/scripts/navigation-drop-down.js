@@ -1,9 +1,9 @@
 const navMobile = document.querySelector('.page-header__nav');
 const buttonToggle = document.querySelector('.page-header__nav-toggle');
 
+navMobile.style.position = 'absolute';
 navMobile.classList.remove('page-header__nav--state-open');
-buttonToggle.classList.replace('page-header__nav-toggle--cross', 'page-header__nav-toggle--burger');
-
+buttonToggle.classList.remove('page-header__nav-toggle--state-open');
 
 buttonToggle.onclick = function() {
   navMobile.classList.toggle('page-header__nav--state-open');

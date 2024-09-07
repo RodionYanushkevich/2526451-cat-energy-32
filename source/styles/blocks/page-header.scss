@@ -17,6 +17,7 @@
   }
 }
 
+
 .page-header__nav {
   display: none;
   width: 100%;
@@ -36,6 +37,7 @@
 
 .page-header__nav--state-open {
   display: block;
+  position: static;
 }
 
 .page-header__logo-link {
@@ -64,6 +66,7 @@
   }
 }
 
+
 .page-header__nav-toggle {
   display: block;
   width: 24px;
@@ -84,6 +87,11 @@
     display: none;
   }
 }
+
+.page-header__nav-toggle--state-open {
+  display: none;
+}
+
 
 .page-header__nav-toggle--burger {
   background-image: url("../../icons/mobile-toggle.svg");
