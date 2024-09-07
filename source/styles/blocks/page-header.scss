@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px 14px;
+  // padding: 13px 20px 14px;
   flex-wrap: wrap;
 
   @media ($viewport-tablet) {
@@ -22,7 +22,7 @@
   display: none;
   width: 100%;
   position: absolute;
-  top: 65px;
+  top: 64px;
   left: 0;
 
   @media ($viewport-tablet) {
@@ -37,6 +37,10 @@
 
 .page-header__nav--state-open {
   display: block;
+  margin-bottom: -1px;
+}
+
+.page-header__nav--state-open-position {
   position: static;
 }
 
@@ -45,6 +49,12 @@
   align-items: center;
   text-decoration: none;
   gap: 13px;
+
+  margin: 13px 0 14px 20px;
+
+  @media ($viewport-tablet) {
+    margin: 0;
+  }
 
   @include events-opacity (0.8, 0.6 );
 }
@@ -72,6 +82,7 @@
   width: 24px;
   height: 24px;
   padding: 0;
+  margin-right: 20px;
 
   border: none;
 

@@ -1,8 +1,7 @@
 const navMobile = document.querySelector('.page-header__nav');
 const buttonToggle = document.querySelector('.page-header__nav-toggle');
 
-navMobile.style.position = 'absolute';
-navMobile.classList.remove('page-header__nav--state-open');
+navMobile.classList.remove('page-header__nav--state-open','page-header__nav--state-open-position');
 buttonToggle.classList.remove('page-header__nav-toggle--state-open');
 
 buttonToggle.onclick = function() {
