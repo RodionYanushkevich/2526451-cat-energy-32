@@ -1,0 +1,14 @@
+.additionally {
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+  padding: 23px 0 34px;
+
+  @media ($viewport-tablet) {
+    padding: 65px 0 52px;
+  }
+
+  @media ($viewport-tablet) {
+    padding: 70px 0 60px;
+  }
+}

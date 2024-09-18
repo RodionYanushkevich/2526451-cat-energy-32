@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form__button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  row-gap: 9px;
+}
+
+.form__footnote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  line-height: 16px;
+  color: #000000;
+}

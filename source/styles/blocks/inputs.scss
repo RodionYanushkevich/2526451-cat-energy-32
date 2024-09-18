@@ -1,0 +1,32 @@
+.inputs__list {
+  margin: 0;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  @media ($viewport-tablet) {
+    padding: 0 70px;
+  }
+}
+
+.inputs__item {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+}
+
+.inputs__label {
+  white-space: nowrap;
+  flex-grow: 0;
+
+  font-family: $seccond-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.inputs__input-field {
+  flex-grow: 1;
+}

@@ -1,0 +1,9 @@
+.personal-data {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  @media ($viewport-desktop) {
+    flex-direction: row;
+  }
+}
