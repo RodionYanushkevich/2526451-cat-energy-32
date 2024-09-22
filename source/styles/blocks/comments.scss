@@ -7,11 +7,31 @@
 .comments__text-area-container {
   display: flex;
   padding: 0 20px;
+
+  @media ($viewport-tablet) {
+    padding: 0 70px;
+  }
+
+  @media ($viewport-desktop) {
+    width: clamp(768px, 100vw, $max-viewport-width);
+    align-self: center;
+  }
 }
 
 
 .comments__text-area {
-
   min-height: 280px;
-  resize: horizontal;
+  resize: vertical;
+
+  @media ($viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.comments__text-area::placeholder {
+  @media ($viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

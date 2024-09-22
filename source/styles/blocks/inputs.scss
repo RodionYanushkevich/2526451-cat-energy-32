@@ -9,6 +9,10 @@
   @media ($viewport-tablet) {
     padding: 0 70px;
   }
+
+  @media ($viewport-desktop) {
+    padding: 0;
+  }
 }
 
 .inputs__item {
@@ -25,8 +29,20 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media ($viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .inputs__input-field {
   flex-grow: 1;
+}
+
+.inputs__input-field::placeholder {
+  @media ($viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

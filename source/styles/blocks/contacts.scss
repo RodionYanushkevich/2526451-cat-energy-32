@@ -21,6 +21,12 @@
   line-height: 26px;
 
   color: #000000;
+  // переделать стик титле
+  @media ($viewport-tablet) {
+    width: unset;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .contacts__fieldset {
@@ -52,7 +58,7 @@
   }
 
   @media ($viewport-desktop) {
-    width: clamp(768px, 1200px, $max-viewport-width);
+    width: clamp(768px, 1220px, $max-viewport-width);
     padding: 0;
   }
 }
@@ -61,4 +67,12 @@
   display: flex;
   align-items: center;
   column-gap: 13px;
+}
+
+.contacts__label,
+.contacts__input::placeholder {
+  @media ($viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

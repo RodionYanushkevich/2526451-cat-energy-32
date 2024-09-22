@@ -3,6 +3,16 @@
   padding: 22px 0 19px;
   display: flex;
   flex-direction: column;
+
+  @media ($viewport-tablet) {
+    box-shadow: none;
+    padding: 0;
+    margin: 0 70px;
+  }
+
+  @media ($viewport-desktop) {
+    margin: 0;
+  }
 }
 
 .radio__list {
@@ -11,9 +21,12 @@
   padding: 0 20px;
   list-style: none;
   row-gap: 13px;
+  margin: 0;
 
   @media ($viewport-tablet) {
-    padding: 0 70px;
+    box-sizing: border-box;
+    border: 1px solid #e7e7e7;
+    padding: 23px 27px 27px;
   }
 }
 
@@ -31,6 +44,11 @@
   text-transform: uppercase;
   color: #444444;
   cursor: pointer;
+
+  @media ($viewport-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &:hover {
     &.radio__label::before {

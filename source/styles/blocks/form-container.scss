@@ -3,6 +3,8 @@
 
   padding-top: 27px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
   @media ($viewport-tablet) {
     box-shadow: none;
@@ -14,6 +16,11 @@
 
   @media ($viewport-tablet) {
     padding: 0 70px;
+  }
+
+  @media ($viewport-desktop) {
+    align-self: center;
+    width: clamp(768px, 100vw, $max-viewport-width);
   }
 }
 
@@ -36,5 +43,10 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media ($viewport-desktop) {
+    align-self: center;
+    width: clamp(768px, 100vw, $max-viewport-width);
   }
 }
