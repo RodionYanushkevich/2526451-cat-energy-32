@@ -1,13 +1,20 @@
 .form-container {
   box-shadow: inset 0 1px 0 0 #d9d9d9;
 
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
 
   @media ($viewport-tablet) {
     box-shadow: none;
+    padding-top: 66px;
+    padding-bottom: 62px;
+  }
+
+  @media ($viewport-desktop) {
+    padding-top: 73px;
+    padding-bottom: 79px;
   }
 }
 
@@ -25,7 +32,7 @@
 }
 
 .form-container__description {
-  margin: 37px 0 39px;
+  margin: 37px 0 40px;
   padding: 0 20px;
 
   font-family: $seccond-font;
@@ -38,7 +45,7 @@
 
 
   @media ($viewport-tablet) {
-    margin: 54px 0 66px;
+    margin: 54px 0 72px;
     padding: 0 70px;
 
     font-size: 20px;

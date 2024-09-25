@@ -16,8 +16,7 @@
   @media ($viewport-tablet) {
     display: grid;
     gap: 32px 123px;
-    grid-template-columns: repeat(auto-fill, 205px);
-    // justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 221px);
     padding: 0 70px;
   }
 
@@ -25,6 +24,7 @@
     padding: 0;
     width: clamp(768px, 100vw, $max-viewport-width);
     align-self: center;
+    gap: 32px 104px;
   }
 }
 
@@ -48,6 +48,7 @@
   @media ($viewport-tablet) {
     font-size: 20px;
     line-height: 30px;
+    column-gap: 20px;
   }
 
   &:hover {
@@ -68,6 +69,10 @@
   width: 30px;
   aspect-ratio: 1;
   outline: 1px solid #cdcdcd;
+
+  @media ($viewport-tablet) {
+    width: 40px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__label::before {
@@ -75,6 +80,10 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 18px 14px;
+
+  @media ($viewport-tablet) {
+    background-size: 24px 17px;
+  }
 }
 
 .checkbox__input:disabled + .checkbox__label {
@@ -83,6 +92,6 @@
   pointer-events: none;
 }
 
-.checkbox__input:focus + .checkbox__label::before {
+.checkbox__input:focus-visible + .checkbox__label::before {
   outline: 1px solid #68b738;
 }

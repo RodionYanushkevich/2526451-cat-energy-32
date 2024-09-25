@@ -26,7 +26,7 @@
   @media ($viewport-tablet) {
     box-sizing: border-box;
     border: 1px solid #e7e7e7;
-    padding: 23px 27px 27px;
+    padding: 21px 27px 27px;
   }
 }
 
@@ -46,6 +46,7 @@
   cursor: pointer;
 
   @media ($viewport-tablet) {
+    gap: 19px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -69,11 +70,19 @@
   aspect-ratio: 1;
   outline: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media ($viewport-tablet) {
+    width: 40px;
+  }
 }
 
 .radio__input:checked + .radio__label::before {
   box-shadow: inset 0 0 0 8.5px #ffffff;
   background-color: #68b738;
+
+  @media ($viewport-tablet) {
+    box-shadow: inset 0 0 0 11px #ffffff;
+  }
 }
 
 .radio__input:disabled + .radio__label {

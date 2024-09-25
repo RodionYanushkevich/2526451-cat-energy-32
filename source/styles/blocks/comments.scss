@@ -2,6 +2,18 @@
   display: flex;
   flex-direction: column;
   row-gap: 38px;
+
+  @media ($viewport-tablet) {
+    row-gap: 86px;
+  }
+
+  @media ($viewport-desktop) {
+    row-gap: 77px;
+  }
+}
+
+.comments .stick-title::before {
+  top: 55%;
 }
 
 .comments__text-area-container {
@@ -20,10 +32,13 @@
 
 
 .comments__text-area {
-  min-height: 280px;
+  min-height: 150px;
   resize: vertical;
 
   @media ($viewport-tablet) {
+    padding: 11px 20px;
+    min-height: 170px;
+
     font-size: 20px;
     line-height: 30px;
   }

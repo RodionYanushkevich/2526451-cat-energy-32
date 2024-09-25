@@ -8,10 +8,14 @@
 
   @media ($viewport-tablet) {
     padding: 0 70px;
+    row-gap: 26px;
   }
 
   @media ($viewport-desktop) {
     padding: 0;
+    // min-width: 384px;
+    flex-grow: 1;
+    min-width: 348px;
   }
 }
 
@@ -38,6 +42,11 @@
 
 .inputs__input-field {
   flex-grow: 1;
+  padding-left: 15px;
+
+  @media ($viewport-tablet) {
+    padding-left: 20px;
+  }
 }
 
 .inputs__input-field::placeholder {

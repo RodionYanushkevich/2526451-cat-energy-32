@@ -1,14 +1,18 @@
 .personal-data {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  gap: 24px;
+
+  @media ($viewport-tablet) {
+    gap: 80px;
+  }
 
   @media ($viewport-desktop) {
     width: clamp(768px, 100vw, $max-viewport-width);
     flex-direction: row;
     align-self: center;
     justify-content: space-between;
-    gap: 80px;
+    // gap: 125px;
   }
 }
 

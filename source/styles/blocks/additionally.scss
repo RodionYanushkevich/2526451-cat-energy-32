@@ -5,10 +5,21 @@
   padding: 23px 0 34px;
 
   @media ($viewport-tablet) {
-    padding: 65px 0 52px;
+    padding: 70px 0 49px;
+    row-gap: 59px;
   }
 
+  @media ($viewport-desktop) {
+    padding: 75px 0 60px;
+    row-gap: 57px;
+  }
+}
+
+
+.additionally .stick-title::before {
+  top: 55%;
+
   @media ($viewport-tablet) {
-    padding: 70px 0 60px;
+    top: 63%;
   }
 }

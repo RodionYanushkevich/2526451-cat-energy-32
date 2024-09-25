@@ -54,13 +54,13 @@
             <legend class="visually-hidden">Поля ввода имя вес возраст</legend>
             <ul class="inputs__list">
               <li class="inputs__item"><label class="inputs__label" for="name-input">ИМЯ:*</label>
-                <input class="inputs__input-field input" type="text" name="name" id="name-input" required placeholder="БАРСИК">
+                <input class="inputs__input-field input" type="text" name="name" id="name-input" required placeholder="БАРСИК" autocomplete="on">
               </li>
               <li class="inputs__item"><label class="inputs__label" for="weight-input">Вес (кг):*</label>
-                <input class="inputs__input-field input" type="text" name="weight" id="weight-input" required placeholder="7">
+                <input class="inputs__input-field input" type="number" name="weight" id="weight-input" required placeholder="7">
               </li>
               <li class="inputs__item"><label class="inputs__label" for="age-input">Возраст (лет):</label>
-                <input class="inputs__input-field input" type="text" name="age" id="age-input" placeholder="7">
+                <input class="inputs__input-field input" type="number" name="age" id="age-input" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -95,10 +95,19 @@
               <li class="contacts__item">
                 <label class="contacts__label" for="email-subscribe">E-mail:*</label>
                 <input class="contacts__input input" placeholder="кuklachev@gmail.com" id="email-subscribe" name="e-mail" type="email" required>
+                <span class="visually-hidden">иконка почты.</span>
+                <svg class="contacts__svg-icon" width="20" height="20">
+                  <use href="icons/stack.svg#email-stroke"></use>
+                </svg>
               </li>
               <li class="contacts__item">
                 <label class="contacts__label" for="tel">Телефон:*</label>
-                <input class="contacts__input input" placeholder="8 (960) 900-60-90" id="tel" name="phone-number" type="text" required>
+                <input class="contacts__input input" placeholder="8 (960) 900-60-90" id="tel" name="phone-number" type="tel" required>
+                <span class="visually-hidden">иконка почты.</span>
+                <svg class="contacts__svg-icon" width="20" height="20">
+                  <use href="icons/stack.svg#phone-stroke"></use>
+                </svg>
+
               </li>
             </ul>
           </fieldset>
